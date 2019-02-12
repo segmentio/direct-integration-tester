@@ -58,4 +58,4 @@ This will generate the necessary binaries to upload to github.
 MIT
 
 
-[1]: https://github.com/segmentio/direct-endpoint-tester/releases
+[1]: https://github.com/segmentio/direct-integration-tester/releases
