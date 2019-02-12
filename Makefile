@@ -1,5 +1,3 @@
-VERSION := $(shell git describe --tags --always --dirty="-dev")
-
 run:
 	go run ./cmd/test-direct-integration/main.go --api-key foo --endpoint https://test.com
 
@@ -15,12 +13,12 @@ pack:
 dist/:
 	mkdir -p dist
 
-dist/direct-endpoint-tester-$(VERSION)-mac: | dist/
+dist/direct-endpoint-tester-mac: | dist/
 	GOOS=darwin GOARCH=amd64 CGO_ENABLED=0 go build $(LDFLAGS) -o $@ ./cmd/test-direct-integration/
 
-dist/direct-endpoint-tester-$(VERSION)-linux: | dist/
+dist/direct-endpoint-tester-linux: | dist/
 	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build $(LDFLAGS) -o $@ ./cmd/test-direct-integration/
 
-dist/direct-endpoint-tester-$(VERSION)-windows.exe: | dist/
+dist/direct-endpoint-tester-windows.exe: | dist/
 	GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build $(LDFLAGS) -o $@ ./cmd/test-direct-integration/
 
