@@ -1,0 +1,11 @@
+{ "anonymousId": "anonymous-1", "type": "page", "timestamp": "{{now.utc}}", "name": "Home", "properties": { "url": "https://segment.com" } }
+{ "anonymousId": "anonymous-1", "type": "page", "timestamp": "{{now.utc}}", "name": "Signup", "properties": { "url": "https://segment.com/signup" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "identify", "timestamp": "{{now.utc}}", "traits": { "email": "calvinfo@segment.com", "first_name": "Calvin", "last_name": "French-Owen", "phone": "555-555-5555" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "track", "timestamp": "{{now.utc}}", "event": "Signed up", "properties": { "referrer": "paid" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "page", "timestamp": "{{now.utc}}", "name": "Setup", "properties": { "url": "https://segment.com/signup" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "group", "groupId": "group-1", "timestamp": "{{now.utc}}", "traits": { "name": "Initech", "industry": "Technology", "employees": 329, "plan": "enterprise", "total billed": 830 } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "track", "timestamp": "{{now.utc}}", "event": "Integration Enabled", "properties": { "name": "Google Analytics" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "track", "timestamp": "{{now.utc}}", "event": "Credit Card Entered", "properties": { "plan": "startup" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "track", "timestamp": "{{now.utc}}", "event": "Invited Teammate", "properties": { "email": "calvins-teammate@segment.com" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "screen", "timestamp": "{{now.utc}}", "name": "Home", "properties": { "variation": "blue signup button" } }
+{ "anonymousId": "anonymous-1", "userId": "identified-1", "type": "screen", "timestamp": "{{now.utc}}", "name": "Home", "properties": { "variation": "blue signup button" } }
