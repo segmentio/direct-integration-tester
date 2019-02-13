@@ -1,5 +1,5 @@
 
-# The segment endpoint tester
+# The Segment direct integration tester
 
 This endpoint tester submits realistic looking data to your Segment endpoint. 
 
@@ -17,24 +17,26 @@ Once you have this file, it's simply a matter of running it from the
 command line:
 
 ```
-$ direct-endpoint-tester API_KEY=<your-api-key> ENDPOINT=<your-direct-endpoint>
+$ chmod +x ./direct-integration-tester
+$ ./direct-endpoint-tester --api-key <your-api-key> --endpoint <your-direct-endpoint>
 ```
 
-This will send roughly 250 different requests to your endpoint. 
+This will send a number of different requests to your endpoint, in compliance with our
+spec. 
 
-## Developing locally
+## Developing the direct integration tester
 
-First, install the required dependencies
+First, install the required dependencies:
 
 ```
-$ goto direct-endpoint-tester
+$ goto direct-integration-tester
 $ go get -u ./...
 ```
 
 Then run the following
 
 ```
-$ API_KEY=<your-api-key> ENDPOINT=<your-direct-endpoint> make run
+$ go run ./cmd/test-direct-integration/main.go --api-key <API_KEY> --endpoint <>
 ```
 
 ## Releasing
