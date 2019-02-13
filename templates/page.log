@@ -1,0 +1,4 @@
+{ "messageId": "{{id}}", "type": "page", "name": "Home", "properties": { "title": "Welcome | Initech", "url": "{{domain}}" }, "userId": null, "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "page", "name": "Home", "properties": { "title": "Welcome | Initech", "url": "{{domain}}", "name": "Home" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "page", "name": "Home", "properties": { "title": "Welcome | Initech", "url": "{{domain}}", "referrer": "{{domain}}", "name": "Home" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "page", "name": "Home", "properties": { "title": "Signup", "url": "{{domain}}/signup", "referrer": "{{domain}}", "name": "Signup", "search": "redirect=foo" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
