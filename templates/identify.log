@@ -1,18 +1,18 @@
-{ "messageId": "{{id}}", "type": "identify", "traits": {}, "userId": null, "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "name": "{{name}}", "email": "{{email}}", "plan": "premium", "logins": 5 }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "address": { "city": "San Francisco", "country": "US", "postalCode": "94111", "state": "CA" } }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "age": 34 }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "avatar": "{{avatar}}" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "birthday": "10-12-1988" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "company": { "name": "Segment", "employee_count": 360 } }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "created_at": "{{now.utc}}" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "description": "{{name}} the user!" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "firstName": "{{name.first}}", "lastName": "{{name.last}}" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "id": "{{id}}" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "email": "{{email}}" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "gender": "male" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "gender": "female" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "gender": "other" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "phone": "555-555-555" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "username": "{{username}}" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
-{ "messageId": "{{id}}", "type": "identify", "traits": { "website": "{{domain}}" }, "userId": "{{id}}", "anonymousId": "{{id}}" "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": {}, "userId": null, "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "name": "{{name}}", "email": "{{email}}", "plan": "premium", "logins": 5 }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "address": { "city": "San Francisco", "country": "US", "postalCode": "94111", "state": "CA" } }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "age": 34 }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "avatar": "{{avatar}}" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "birthday": "10-12-1988" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "company": { "name": "Segment", "employee_count": 360 } }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "created_at": "{{now.utc}}" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "description": "{{name}} the user!" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "firstName": "{{name.first}}", "lastName": "{{name.last}}" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "id": "{{id}}" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "email": "{{email}}" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "gender": "male" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "gender": "female" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "gender": "other" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "phone": "555-555-555" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "username": "{{username}}" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "identify", "traits": { "website": "{{domain}}" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }

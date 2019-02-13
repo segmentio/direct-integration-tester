@@ -1,0 +1,5 @@
+{ "messageId": "{{id}}", "type": "track", "event": "Registered", "userId": null, "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "track", "properties": { "plan": "Pro Annual", "accountType": "Facebook" }, "event": "Signed Up", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "track", "properties": { "title": "Intro to Analytics" }, "event": "Course Clicked", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "track", "properties": { "revenue": 19.99, "currency": "usd" }, "event": "Order Completed", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "track", "properties": { "experiment_id": "{{id}}", "experiment_name": "button_alteration", "variation_id": "{{id}}", "variation_name": "blue" }, "event": "Experiment Viewed", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
