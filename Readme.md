@@ -29,14 +29,14 @@ spec.
 First, install the required dependencies:
 
 ```
-$ goto direct-integration-tester
+$ goto direct-endpoint-tester
 $ go get -u ./...
 ```
 
 Then run the following
 
 ```
-$ go run ./cmd/test-direct-integration/main.go --api-key <API_KEY> --endpoint <>
+$ go run ./cmd/test-direct-integration/main.go --api-key <your-api-key> --endpoint <your-direct-endpoint>
 ```
 
 ## Releasing

@@ -1,0 +1,2 @@
+{ "messageId": "{{id}}", "type": "screen", "name": "Home", "properties": { "title": "Welcome | Initech" }, "userId": null, "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "screen", "name": "Home", "properties": { "title": "Welcome | Initech" }, "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }

@@ -1,0 +1,13 @@
+{ "messageId": "{{id}}", "type": "group", "traits": {}, "groupId": "{{id}}", "userId": null, "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "name": "{{name}}", "email": "{{email}}", "plan": "premium", "logins": 5 },  "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "address": { "city": "San Francisco", "country": "US", "postalCode": "94111", "state": "CA" } }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "avatar": "{{avatar}}" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "createdAt": "{{now.utc}}" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "name": "Segment", "employees": 360 }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "description": "{{name}} the user!" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "firstName": "{{name.first}}", "lastName": "{{name.last}}" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "id": "{{id}}" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "email": "{{email}}" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "phone": "555-555-555" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "website": "{{domain}}" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
+{ "messageId": "{{id}}", "type": "group", "traits": { "plan": "Enterprsie" }, "groupId": "{{id}}", "userId": "{{id}}", "anonymousId": "{{id}}", "timestamp": "{{now.utc}}" }
