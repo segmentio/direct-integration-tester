@@ -5,22 +5,20 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/gobuffalo/packd"
+	"github.com/gobuffalo/packr"
+	"github.com/yields/phony/pkg/phony"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"regexp"
 	"strings"
-	"sync/atomic"
-
-	"github.com/gobuffalo/packd"
-	"github.com/gobuffalo/packr"
-	"github.com/tj/go-sync/semaphore"
-	"github.com/yields/phony/pkg/phony"
 )
 
 func main() {
 	key := flag.String("api-key", "", "the api key to send to the endpoint")
-	endpoint := flag.String("endpoint", "", "the endpoint to send to (https://api.yourtool.com)")
+	endpoint := flag.String("", "https://segment-test.singular.net/api/v1/partners/segment", "the endpoint to send to (https://api.yourtool.com)")
+	dir := flag.String("dir", "", "the templates directory to use. Default is: ../../templates")
 
 	flag.Parse()
 
@@ -32,31 +30,49 @@ func main() {
 		log.Fatal("Error, must specify a valid --endpoint <...>")
 	}
 
-	box := packr.NewBox("../../templates")
-	lines := readdir(box)
-
-	sem := make(semaphore.Semaphore, 10)
-	var errors int32
-	var success int32
-
-	for line := range lines {
-		sem.Run(func() {
-			gen, err := compile(line)
-			if err != nil {
-				log.Fatal(err)
-			}
-			err = request(*key, *endpoint, gen())
-			if err != nil {
-				log.Printf("Warn: error hitting endpoint %v\n", err)
-				atomic.AddInt32(&errors, 1)
-			} else {
-				atomic.AddInt32(&success, 1)
-			}
-		})
+	if *dir == "" {
+		*dir = "../../templates"
 	}
 
-	sem.Wait()
+	box := packr.NewBox(*dir)
+	lines := readdir(box)
+
+	errors := 0
+	success := 0
+	linesCounter := 0
+
+	ch := make(chan string, len(lines))
+
+	for line := range lines {
+		linesCounter += 1
+		go createAndSendRequest(line, endpoint, key, ch)
+	}
+
+	for i := 0; i < linesCounter; i++ {
+		result := <-ch
+
+		if result == "success" {
+			success += 1
+		} else {
+			errors += 1
+		}
+	}
+
 	fmt.Printf("errors: %d, successes: %d \n", errors, success)
+}
+
+func createAndSendRequest(data string, endpoint *string, key *string, ch chan string) {
+	gen, err := compile(data)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = request(*key, *endpoint, gen())
+	if err != nil {
+		log.Printf("Warn: error hitting endpoint %v\n", err)
+		ch <- "error"
+	} else {
+		ch <- "success"
+	}
 }
 
 func readdir(box packr.Box) chan string {
