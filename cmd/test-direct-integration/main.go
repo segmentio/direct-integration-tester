@@ -17,7 +17,7 @@ import (
 
 func main() {
 	key := flag.String("api-key", "", "the api key to send to the endpoint")
-	endpoint := flag.String("", "https://segment-test.singular.net/api/v1/partners/segment", "the endpoint to send to (https://api.yourtool.com)")
+	endpoint := flag.String("endpoint", "", "the endpoint to send to (https://api.yourtool.com)")
 	dir := flag.String("dir", "", "the templates directory to use. Default is: ../../templates")
 
 	flag.Parse()
