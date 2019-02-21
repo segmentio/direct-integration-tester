@@ -32,7 +32,7 @@ func main() {
 	}
 
 	box := packr.NewBox("../../templates")
-	if *dir == "" {
+	if *dir != "" {
 		box = packr.NewBox(*dir)
 	}
 
