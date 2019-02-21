@@ -5,14 +5,15 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/gobuffalo/packd"
-	"github.com/gobuffalo/packr"
-	"github.com/yields/phony/pkg/phony"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"regexp"
 	"strings"
+
+	"github.com/gobuffalo/packd"
+	"github.com/gobuffalo/packr"
+	"github.com/yields/phony/pkg/phony"
 )
 
 func main() {
@@ -30,11 +31,11 @@ func main() {
 		log.Fatal("Error, must specify a valid --endpoint <...>")
 	}
 
+	box := packr.NewBox("../../templates")
 	if *dir == "" {
-		*dir = "../../templates"
+		box = packr.NewBox(*dir)
 	}
 
-	box := packr.NewBox(*dir)
 	lines := readdir(box)
 
 	errors := 0
