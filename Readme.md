@@ -1,4 +1,3 @@
-
 # The Segment direct integration tester
 
 This endpoint tester submits realistic looking data to your Segment endpoint. 
@@ -17,8 +16,8 @@ Once you have this file, it's simply a matter of running it from the
 command line:
 
 ```
-$ chmod +x ./direct-integration-tester
-$ ./direct-endpoint-tester --api-key <your-api-key> --endpoint <your-direct-endpoint>
+$ chmod +x ./direct-endpoint-tester-mac
+$ ./direct-endpoint-tester-mac --api-key <your-api-key> --endpoint <your-direct-endpoint>
 ```
 
 This will send a number of different requests to your endpoint, in compliance with our
